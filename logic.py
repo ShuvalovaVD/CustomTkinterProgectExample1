@@ -1,3 +1,5 @@
+# модуль visual.py будет отвечать за отрисовку gui, logic.py - за логику: высчитывание ответа
+
 def op_1(input_data):
     number = int(input_data)
     result_number = number * 2
