@@ -6,8 +6,6 @@ import customtkinter as ctk  # подключаем модуль customtkinter
 
 
 def handle_pressing_btn_done():  # функция-обработчик события нажатия кнопки btn_done
-    # подключаем перменные из глобальной области, иначе в функции будут созданы уже другие - локальные с теми же именами
-    global entry_input, entry_output, cmbbox_operations
     input_data = entry_input.get()  # получаем данные из поля ввода entry_input (в типе данных str)
     if cmbbox_operations.get() == "Операция 1: умножить на 2":
         output_data = logic.op_1(input_data)  # высчитываем ответ, вызывая функцию op_1 из модуля logic
